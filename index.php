@@ -48,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 		<meta name="msapplication-config" content="/RosenfeldVPN/icons/browserconfig.xml?v=bOO82xW3dp">
 		<meta name="theme-color" content="#333333">
 	</head>
-	<body>
+	<body class="vpn-<?php echo ($vpn->started) ? 'on' : 'off'; ?>">
 		<header>
 			<h1>VPN</h1>
 		</header>

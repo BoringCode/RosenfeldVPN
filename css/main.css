@@ -16,11 +16,16 @@ body {
 		position: fixed;
 		top: 0;
 		left: 0;
-		z-index: -1;
 		content: "";
 		height: 20px;
 		width: 100%;
 		background: #999;
+	}
+	.vpn-off:before {
+		background: #d9534f;
+	}
+	.vpn-on:before {
+		background: #5cb85c;
 	}
 
 
