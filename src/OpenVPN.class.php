@@ -13,7 +13,7 @@ require 'jsonwrapper/jsonwrapper.php';
 class OpenVPN {
 	private $daemon = "openvpn";
 	private $wait = 4;
-	private $ip_check = "http://api.duckduckgo.com/?q=what+is+my+ip&format=json&pretty=1";
+	private $ip_check = "http://api.duckduckgo.com/?q=ip&format=json&pretty=1";
 
 	public function __construct() {
 		exec("pgrep " . $this->daemon, $output, $return);
