@@ -104,9 +104,6 @@ button {
 	border-color: #ccc;
 	transition: all 200ms ease-in-out;
 }
-	.btn:active:after, .btn:focus:after {
-		content: " (executing)"
-	}
 .btn.danger {
 	color: #fff;
 	background-color: #d9534f;

@@ -56,10 +56,16 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 		</header>
 		<p>Status: <span class="label <?php echo ($vpn->started) ? 'success' : 'danger'; ?>"><?php echo ($vpn->started) ? 'started' : 'stopped'; ?></span></p>
 		<p class="fine-print"><?php echo $vpn->ip()->Answer; ?></p>
-		<form method="post">
+		<form method="post" class="reload-vpn">
 			<p>
 				<button type="submit" class="btn <?php echo (!$vpn->started) ? 'success' : 'danger'; ?>"><?php echo (!$vpn->started) ? 'Start' : 'Stop'; ?> VPN</button>
 			</p>
 		</form>
+		<script>
+			// Give the user some idea that they clicked the button
+			document.querySelector(".reload-vpn").addEventListener("submit", function(e) {
+				document.querySelector(".btn").textContent += " (executing)";
+			})
+		</script>
 	</body>
 </html>
