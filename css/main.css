@@ -7,8 +7,8 @@ html {
 body {
 	background: white;
 	max-width: 700px;
-	padding: 0 6%;
-	margin: 18% auto 15% auto;
+	padding: 0 4%;
+	margin: 20% auto 15% auto;
 	text-align: center;
 }
 	body:before {
@@ -17,7 +17,7 @@ body {
 		left: 0;
 		z-index: -1;
 		content: "";
-		height: 10px;
+		height: 20px;
 		width: 100%;
 		background: #333;
 	}
