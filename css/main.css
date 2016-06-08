@@ -1,6 +1,6 @@
 html {
 	font-family: 'Source Sans Pro', sans-serif;
-	color: #222;
+	color: #333;
 	background: white;
 }
 
@@ -30,11 +30,26 @@ body {
 
 
 h1 {
+	position: relative;
+	display: inline-block;
 	font-size: 2.4rem;
 	line-height: 3rem;
 	margin-top: 1.5rem;
 	font-family: 'Cantata One', serif;
 	font-weight: 400;
+}
+
+.title {
+	text-decoration: none;
+	display: block;
+}
+
+.reload {
+	position: absolute;
+	top: 0;
+	right: -1rem;
+	font-size: 1rem;
+	line-height: 1rem;
 }
 
 a {

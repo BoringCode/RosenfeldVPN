@@ -50,7 +50,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 	</head>
 	<body class="vpn-<?php echo ($vpn->started) ? 'on' : 'off'; ?>">
 		<header>
-			<h1>VPN</h1>
+			<a href="/RosenfeldVPN/" class="title">
+				<h1>VPN <span class="reload">&#8635;</span></h1>
+			</a>
 		</header>
 		<p>Status: <span class="label <?php echo ($vpn->started) ? 'success' : 'danger'; ?>"><?php echo ($vpn->started) ? 'started' : 'stopped'; ?></span></p>
 		<p class="fine-print"><?php echo $vpn->ip()->Answer; ?></p>
