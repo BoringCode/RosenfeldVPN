@@ -12,7 +12,7 @@ require 'jsonwrapper/jsonwrapper.php';
  */
 class OpenVPN {
 	private $daemon = "openvpn";
-	private $wait = 3;
+	private $wait = 4;
 	private $ip_check = "http://ip-api.com/json/";
 
 	public function __construct() {
