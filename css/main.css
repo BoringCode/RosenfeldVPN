@@ -114,3 +114,9 @@ button {
 		content: "r";
 	}
 }
+
+@media screen and (max-height: 500px) {
+	body {
+		margin: 0% auto 5% auto;
+	}
+}
