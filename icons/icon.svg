@@ -48,7 +48,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -57,16 +57,9 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-792.36216)">
-    <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect4159"
-       width="301.42856"
-       height="285"
-       x="-14.285714"
-       y="781.64789" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:37.31494522px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#501616;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-weight:normal;font-size:37.31494522px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#33333f;fill-opacity:0.94117647;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
        x="14.167437"
        y="953.31372"
        id="text4136"
@@ -75,6 +68,6 @@
          id="tspan4138"
          x="14.167437"
          y="953.31372"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:83.95862579px;font-family:'Cantata One';-inkscape-font-specification:'Cantata One';fill:#501616;">rVPN</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:83.95862579px;font-family:'Cantata One';-inkscape-font-specification:'Cantata One';fill:#33333f;fill-opacity:0.94117647;">rVPN</tspan></text>
   </g>
 </svg>
