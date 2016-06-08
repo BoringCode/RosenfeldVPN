@@ -69,13 +69,17 @@ button {
 	color: #333;
 	background-color: #fff;
 	border-color: #ccc;
+	transition: all 200ms ease-in-out;
 }
+	.btn:active:after {
+		content: " (executing)"
+	}
 .btn.danger {
 	color: #fff;
 	background-color: #d9534f;
 	border-color: #d43f3a;
 }
-	.btn.danger {
+	.btn.danger:hover {
 		background-color: #c9302c;
 	}
 .btn.success {
