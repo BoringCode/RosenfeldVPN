@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 		<link rel="stylesheet" href="css/typebase.css">
 		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300|Cantata+One" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="css/main.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<link rel="apple-touch-icon" sizes="57x57" href="/RosenfeldVPN/icons/apple-touch-icon-57x57.png?v=bOO82xW3dp">
 		<link rel="apple-touch-icon" sizes="60x60" href="/RosenfeldVPN/icons/apple-touch-icon-60x60.png?v=bOO82xW3dp">
