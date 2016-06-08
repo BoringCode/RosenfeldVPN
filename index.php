@@ -51,8 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 			<h1>VPN</h1>
 		</header>
 		<p>Status: <span class="label <?php echo ($vpn->started) ? 'success' : 'danger'; ?>"><?php echo ($vpn->started) ? 'started' : 'stopped'; ?></span></p>
-		<?php $location = $vpn->ip(); ?>
-		<p class="fine-print"><?php echo $location->Answer; ?></p>
+		<p class="fine-print"><?php echo $vpn->ip()->Answer; ?></p>
 		<form method="post">
 			<p>
 				<button type="submit" class="btn <?php echo (!$vpn->started) ? 'success' : 'danger'; ?>"><?php echo (!$vpn->started) ? 'Start' : 'Stop'; ?> VPN</button>
