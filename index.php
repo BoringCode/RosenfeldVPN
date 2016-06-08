@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 		</header>
 		<p>Status: <span class="label <?php echo ($vpn->started) ? 'success' : 'danger'; ?>"><?php echo ($vpn->started) ? 'started' : 'stopped'; ?></span></p>
 		<?php $location = $vpn->ip(); ?>
-		<p class="fine-print">You appear to be located in <?php echo $location["city"]; ?>, <?php echo $location["country"]; ?></p>
+		<p class="fine-print">You appear to be located in <?php echo $location->city; ?>, <?php echo $location->country; ?></p>
 		<form method="post">
 			<p>
 				<button type="submit" class="btn <?php echo (!$vpn->started) ? 'success' : 'danger'; ?>"><?php echo (!$vpn->started) ? 'Start' : 'Stop'; ?> VPN</button>

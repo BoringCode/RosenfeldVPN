@@ -2,6 +2,10 @@
 
 if(count(get_included_files()) ==1) exit("Direct access not permitted.");
 
+// JSONWrapper is used because the router doesn't support json_decode
+// https://boutell.com/scripts/jsonwrapper.html
+require 'jsonwrapper/jsonwrapper.php';
+
 /**
  * Wrapper for OpenVPN shell commands
  * @author Bradley Rosenfeld
@@ -9,7 +13,7 @@ if(count(get_included_files()) ==1) exit("Direct access not permitted.");
 class OpenVPN {
 	private $daemon = "openvpn";
 	private $wait = 4;
-	private $ip_check = "http://ip-api.com/php/";
+	private $ip_check = "http://ip-api.com/json/";
 
 	public function __construct() {
 		exec("pgrep " . $this->daemon, $output, $return);
@@ -46,6 +50,6 @@ class OpenVPN {
 	 * @return array
 	 */
 	public function ip() {
-		return @unserialize(file_get_contents($this->ip_check));
+		return json_decode(file_get_contents($this->ip_check));
 	}
 }
