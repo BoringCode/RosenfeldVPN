@@ -5,11 +5,22 @@ html {
 }
 
 body {
+	background: white;
 	max-width: 700px;
 	padding: 0 6%;
 	margin: 15% auto 15% auto;
 	text-align: center;
 }
+	body:before {
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		content: "";
+		height: 40px;
+		width: 100%;
+		background: #ccc;
+	}
 
 
 h1 {
