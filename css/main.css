@@ -71,7 +71,7 @@ button {
 	border-color: #ccc;
 	transition: all 200ms ease-in-out;
 }
-	.btn:active:after {
+	.btn:active:after, .btn:focus:after {
 		content: " (executing)"
 	}
 .btn.danger {
