@@ -43,6 +43,9 @@ h1 {
 	text-decoration: none;
 	display: block;
 }
+    .title:hover .reload {
+            color: #5cb85c;
+    }
 
 .reload {
 	position: absolute;
@@ -50,6 +53,7 @@ h1 {
 	right: -1rem;
 	font-size: 1rem;
 	line-height: 1rem;
+    transition: all 200ms ease-in-out;
 }
 
 a {
