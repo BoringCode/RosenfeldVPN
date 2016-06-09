@@ -75,6 +75,9 @@ header h1:before {
 	color: #bbb;
 	font-size: 0.8rem;
 }
+    .fine-print a {
+            display: block;
+    }
 
 button {
 	display: inline-block;
